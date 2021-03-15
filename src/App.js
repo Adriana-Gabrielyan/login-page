@@ -25,15 +25,15 @@ class App extends React.Component {
 
   render() {
     return (
-      <div className="app">
+      <div className="app"> 
         <img src={logo} alt="logo" className="app__logo" />
         <form className="app__form">
           <img src={bear} alt="bear" className="app__image" />
           <h1 className="app__title">Sign In</h1>
-          <Input required handleChange={this.handleChange} name="username">
+          <Input type="text" required handleChange={this.handleChange} name="username">
             Username
           </Input>
-          <Input required handleChange={this.handleChange} name="password">
+          <Input type="password" required handleChange={this.handleChange} name="password">
             <span>Password</span>
             <a href="#" className="form__link">
               Forgot password?
